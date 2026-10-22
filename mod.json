@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "samsho-reader",
+  "name": "SamSho Reader",
+  "game": "SAMURAI SHODOWN",
+  "steamAppId": 1342260,
+  "installDir": "SamuraiShodown",
+  "gameExe": "SamuraiShodown.exe",
+  "target": "SamuraiShodown/Binaries/Win64",
+  "asset": "SamShoReader-*.zip",
+  "uninstall": ["dwmapi.dll", "ue4ss"],
+  "description": {
+    "en": "Screen-reader mod for SAMURAI SHODOWN (2019): menus, character select, story subtitles, command lists and the fight numbers, spoken through NVDA or JAWS.",
+    "es": "Mod de accesibilidad para SAMURAI SHODOWN (2019): menús, selección de personaje, subtítulos de la historia, lista de comandos y los números de la pelea, leídos con NVDA o JAWS."
+  }
+}
