@@ -1,4 +1,4 @@
-# SamShoAccess
+# SamSho Reader
 
 > 本翻译未经母语者校对。如有用词错误，欢迎报告。
 
@@ -17,10 +17,10 @@
 
 ## 安装
 
-1. 从 Releases 页面下载最新的 `SamShoAccess-x.y.z.zip`。
+1. 从 Releases 页面下载最新的 `SamShoReader-x.y.z.zip`。
 2. 把其中的全部内容解压到 `SamuraiShodown\Binaries\Win64\`（游戏文件夹；在 Steam 中为 `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`）：`dwmapi.dll`、`ue4ss` 文件夹和各语言的 README。
 3. **从 Steam** 启动游戏（不要直接运行 .exe：没有 Steam 时游戏会以英文启动且处于离线状态）。
-4. 加载完成后 Mod 会说 "SamShoAccess"。如果没听到，按 F8：它会报出找到的屏幕阅读器名称。
+4. 加载完成后 Mod 会说 "SamSho Reader"。如果没听到，按 F8：它会报出找到的屏幕阅读器名称。
 
 ## Mod 的按键
 
@@ -30,6 +30,8 @@
 | F2 / F3 | 右摇杆 上 / 下 | 保留内容的上一项 / 下一项 |
 | F10 | 按下右摇杆 | 切换指令记法（普通、街机、街机简化、FGC、FGC 简化）。选择会被保存 |
 | F4 | 按下右摇杆（没有保留内容时） | 读出当前画面的按键说明（"9 或 A 确认，0 或 B 返回"） |
+| F7 | | 停止朗读 |
+| F6 | L3 + R3（两个摇杆同时按下） | 关闭 Mod，再按一次重新开启；用游戏自己的“开启/关闭”用语确认。不会保存：每次启动都是开启状态 |
 | F8 | | 报出 Mod 使用的屏幕阅读器 |
 | Ctrl + Esc | | 停止朗读 |
 

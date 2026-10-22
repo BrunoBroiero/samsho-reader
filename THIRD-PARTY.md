@@ -1,4 +1,4 @@
-# Third-party files shipped with SamShoAccess
+# Third-party files shipped with SamSho Reader
 
 The download carries files the mod did not write. They come from two projects, and both are
 shipped unmodified.
@@ -25,8 +25,8 @@ The stable release of April 2024 cannot be used instead: on this game it crashes
 
 | File | Project | Licence |
 |------|---------|---------|
-| `ue4ss\Mods\SamShoAccess\Scripts\prism.dll` | [PRISM](https://github.com/ethindp/prism) by Ethin Probst | Mozilla Public License 2.0 |
-| `ue4ss\Mods\SamShoAccess\Scripts\tolk.dll` | PRISM's Tolk-compatible backend, from the same release | Mozilla Public License 2.0 |
+| `ue4ss\Mods\SamShoReader\Scripts\prism.dll` | [PRISM](https://github.com/ethindp/prism) by Ethin Probst | Mozilla Public License 2.0 |
+| `ue4ss\Mods\SamShoReader\Scripts\tolk.dll` | PRISM's Tolk-compatible backend, from the same release | Mozilla Public License 2.0 |
 
 `tolk.dll` here is **not** Davy Kager's Tolk library: it is the compatibility backend built
 and shipped by PRISM, which is why it falls under PRISM's licence.
@@ -73,8 +73,8 @@ PRISM uses code from other projects. Reproduced from its `NOTICE` file:
 
 ## The mod itself
 
-Everything else under `ue4ss\Mods\SamShoAccess\` — the Lua scripts and `prism_bridge.dll`,
-the small native module that hands speech to PRISM and reads the gamepad — is SamShoAccess,
+Everything else under `ue4ss\Mods\SamShoReader\` — the Lua scripts and `prism_bridge.dll`,
+the small native module that hands speech to PRISM and reads the gamepad — is SamSho Reader,
 by Bruno Broiero. Its source is not public yet (see the README); the download is free to
 use and share as it is.
 

@@ -1,4 +1,4 @@
-# SamShoAccess
+# SamSho Reader
 
 Mod de accesibilidad para **SAMURAI SHODOWN** (2019, Steam): hace que el juego se lea con tu lector de pantalla. Menús, opciones, selección de personaje y escenario, subtítulos de la historia, tutorial, lista de comandos, base de datos, galería, online, resultados y los números de la pelea.
 
@@ -15,10 +15,10 @@ Autor: **Bruno Broiero**. Hecho con Claude.
 
 ## Instalación
 
-1. Bajá el `SamShoAccess-x.y.z.zip` más nuevo de la página de Releases.
+1. Bajá el `SamShoReader-x.y.z.zip` más nuevo de la página de Releases.
 2. Descomprimí todo lo que trae dentro de `SamuraiShodown\Binaries\Win64\` (la carpeta del juego, en Steam: `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`): `dwmapi.dll`, la carpeta `ue4ss` y los README.
 3. Abrí el juego **desde Steam** (no desde el .exe: sin Steam arranca en inglés y sin conexión).
-4. Al cargar, el mod dice "SamShoAccess". Si no lo oís, apretá F8: dice el nombre del lector de pantalla que encontró.
+4. Al cargar, el mod dice "SamSho Reader". Si no lo oís, apretá F8: dice el nombre del lector de pantalla que encontró.
 
 ## Teclas del mod
 
@@ -28,6 +28,8 @@ Autor: **Bruno Broiero**. Hecho con Claude.
 | F2 / F3 | Stick derecho arriba / abajo | Pieza anterior / siguiente de lo retenido |
 | F10 | Clic del stick derecho | Cambia la notación de los comandos (Normal, Arcade, Arcade simplificado, FGC, FGC simplificado). La elección se guarda |
 | F4 | Clic del stick derecho, si no hay nada retenido | Lee la leyenda de botones de la pantalla ("9 o A Confirmar, 0 o B Volver") |
+| F7 | | Frena la voz |
+| F6 | L3 + R3 (los dos sticks apretados a la vez) | Apaga el mod y lo vuelve a prender; lo confirma con las palabras del juego para activado y desactivado. No se guarda: siempre arranca prendido |
 | F8 | | Dice qué lector de pantalla usa el mod |
 | Ctrl + Escape | | Calla la voz |
 

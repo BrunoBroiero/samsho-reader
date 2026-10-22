@@ -1,4 +1,4 @@
-# SamShoAccess
+# SamSho Reader
 
 > Tradução sem revisão de um falante nativo. Uma palavra errada é um erro que vale a pena relatar.
 
@@ -17,10 +17,10 @@ Autor: **Bruno Broiero**. Feito com Claude.
 
 ## Instalação
 
-1. Baixe o `SamShoAccess-x.y.z.zip` mais recente da página de Releases.
+1. Baixe o `SamShoReader-x.y.z.zip` mais recente da página de Releases.
 2. Extraia todo o conteúdo em `SamuraiShodown\Binaries\Win64\` (a pasta do jogo; na Steam: `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`): `dwmapi.dll`, a pasta `ue4ss` e os READMEs.
 3. Abra o jogo **pela Steam** (não pelo .exe: sem a Steam ele inicia em inglês e sem conexão).
-4. Ao carregar, o mod diz "SamShoAccess". Se você não ouvir, aperte F8: ele diz o nome do leitor de tela encontrado.
+4. Ao carregar, o mod diz "SamSho Reader". Se você não ouvir, aperte F8: ele diz o nome do leitor de tela encontrado.
 
 ## Teclas do mod
 
@@ -30,6 +30,8 @@ Autor: **Bruno Broiero**. Feito com Claude.
 | F2 / F3 | Analógico direito cima / baixo | Parte anterior / seguinte do que está retido |
 | F10 | Clique do analógico direito | Muda a notação dos comandos (Normal, Arcade, Arcade simplificada, FGC, FGC simplificada). A escolha fica salva |
 | F4 | Clique do analógico direito, quando nada está retido | Lê a legenda de botões da tela ("9 ou A Confirmar, 0 ou B Voltar") |
+| F7 | | Para a voz |
+| F6 | L3 + R3 (os dois analógicos pressionados juntos) | Desliga o mod e liga de novo; confirma com as palavras do jogo para ativado e desativado. Não é salvo: ele sempre começa ligado |
 | F8 | | Diz qual leitor de tela o mod usa |
 | Ctrl + Esc | | Silencia a voz |
 

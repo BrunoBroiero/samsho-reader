@@ -1,4 +1,4 @@
-# SamShoAccess
+# SamSho Reader
 
 **English** · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Français](README.fr.md) ·
 [Italiano](README.it.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [한국어](README.ko.md) ·
@@ -19,10 +19,10 @@ Author: **Bruno Broiero**. Built with Claude.
 
 ## Installation
 
-1. Download the latest `SamShoAccess-x.y.z.zip` from [Releases](../../releases).
+1. Download the latest `SamShoReader-x.y.z.zip` from [Releases](../../releases).
 2. Extract everything in it into `SamuraiShodown\Binaries\Win64\` (the game folder; in Steam: `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`): `dwmapi.dll`, the `ue4ss` folder and the READMEs.
 3. Launch the game **from Steam** (not from the .exe: without Steam it starts in English and offline).
-4. When it loads, the mod says "SamShoAccess". If you do not hear it, press F8: it names the screen reader it found.
+4. When it loads, the mod says "SamSho Reader". If you do not hear it, press F8: it names the screen reader it found.
 
 ## The mod's keys
 
@@ -32,6 +32,8 @@ Author: **Bruno Broiero**. Built with Claude.
 | F2 / F3 | Right stick up / down | Previous / next piece of what is held |
 | F10 | Right stick click | Changes the command notation (Normal, Arcade, Arcade simplified, FGC, FGC simplified). The choice is saved |
 | F4 | Right stick click, when nothing is held | Reads the screen's button legend ("9 or A Confirm, 0 or B Back") |
+| F7 | | Stops the voice |
+| F6 | L3 + R3 (both sticks pressed together) | Turns the mod off and back on, confirmed with the game's words for on and off. Not saved: it always starts on |
 | F8 | | Names the screen reader the mod uses |
 | Ctrl + Escape | | Silences speech |
 
