@@ -30,10 +30,8 @@ Autore: **Bruno Broiero**. Realizzato con Claude.
 | F2 / F3 | Stick destro su / giù | Elemento precedente / successivo di ciò che è trattenuto |
 | F10 | Clic dello stick destro | Cambia la notazione dei comandi (Normale, Arcade, Arcade semplificata, FGC, FGC semplificata). La scelta viene salvata |
 | F4 | Clic dello stick destro, quando non c'è nulla trattenuto | Legge la legenda dei pulsanti della schermata ("9 o A Conferma, 0 o B Indietro") |
-| F7 | | Ferma la voce |
 | F6 | L3 + R3 (le due levette premute insieme) | Spegne il mod e lo riaccende; lo conferma con le parole del gioco per attivato e disattivato. Non viene salvato: parte sempre acceso |
 | F8 | | Dice quale screen reader usa il mod |
-| Ctrl + Esc | | Zittisce la voce |
 
 Le frecce, Invio e Backspace sono del gioco, non del mod.
 

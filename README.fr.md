@@ -30,10 +30,8 @@ Auteur : **Bruno Broiero**. Réalisé avec Claude.
 | F2 / F3 | Stick droit haut / bas | Élément précédent / suivant de ce qui est retenu |
 | F10 | Clic du stick droit | Change la notation des commandes (Normale, Arcade, Arcade simplifiée, FGC, FGC simplifiée). Le choix est enregistré |
 | F4 | Clic du stick droit, quand rien n'est retenu | Lit la légende des boutons de l'écran (« 9 ou A Confirmer, 0 ou B Retour ») |
-| F7 | | Arrête la voix |
 | F6 | L3 + R3 (les deux sticks pressés ensemble) | Éteint le mod et le rallume ; confirmé avec les mots du jeu pour activé et désactivé. Non enregistré : il démarre toujours allumé |
 | F8 | | Nomme le lecteur d'écran utilisé |
-| Ctrl + Échap | | Coupe la voix |
 
 Les flèches, Entrée et Retour arrière appartiennent au jeu, pas au mod.
 

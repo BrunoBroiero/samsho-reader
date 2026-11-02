@@ -30,10 +30,8 @@ Autor: **Bruno Broiero**. Feito com Claude.
 | F2 / F3 | Analógico direito cima / baixo | Parte anterior / seguinte do que está retido |
 | F10 | Clique do analógico direito | Muda a notação dos comandos (Normal, Arcade, Arcade simplificada, FGC, FGC simplificada). A escolha fica salva |
 | F4 | Clique do analógico direito, quando nada está retido | Lê a legenda de botões da tela ("9 ou A Confirmar, 0 ou B Voltar") |
-| F7 | | Para a voz |
 | F6 | L3 + R3 (os dois analógicos pressionados juntos) | Desliga o mod e liga de novo; confirma com as palavras do jogo para ativado e desativado. Não é salvo: ele sempre começa ligado |
 | F8 | | Diz qual leitor de tela o mod usa |
-| Ctrl + Esc | | Silencia a voz |
 
 As setas, Enter e Backspace são do jogo, não do mod.
 

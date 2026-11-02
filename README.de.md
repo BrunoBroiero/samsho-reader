@@ -30,7 +30,6 @@ Autor: **Bruno Broiero**. Erstellt mit Claude.
 | F2 / F3 | Rechter Stick hoch / runter | Vorheriger / nächster Teil des Festgehaltenen |
 | F10 | Klick des rechten Sticks | Wechselt die Befehlsnotation (Normal, Arcade, Arcade vereinfacht, FGC, FGC vereinfacht). Die Wahl wird gespeichert |
 | F4 | Klick des rechten Sticks, wenn nichts festgehalten ist | Liest die Tastenlegende des Bildschirms („9 oder A Bestätigen, 0 oder B Zurück“) |
-| F7 | | Stoppt die Stimme |
 | F6 | L3 + R3 (beide Sticks zugleich gedrückt) | Schaltet den Mod aus und wieder ein, bestätigt mit den Wörtern des Spiels für an und aus. Wird nicht gespeichert: er startet immer eingeschaltet |
 | F8 | | Nennt den vom Mod benutzten Screenreader |
 | Strg + Esc | | Bringt die Sprache zum Schweigen |

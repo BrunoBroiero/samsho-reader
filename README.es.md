@@ -28,10 +28,8 @@ Autor: **Bruno Broiero**. Hecho con Claude.
 | F2 / F3 | Stick derecho arriba / abajo | Pieza anterior / siguiente de lo retenido |
 | F10 | Clic del stick derecho | Cambia la notación de los comandos (Normal, Arcade, Arcade simplificado, FGC, FGC simplificado). La elección se guarda |
 | F4 | Clic del stick derecho, si no hay nada retenido | Lee la leyenda de botones de la pantalla ("9 o A Confirmar, 0 o B Volver") |
-| F7 | | Frena la voz |
 | F6 | L3 + R3 (los dos sticks apretados a la vez) | Apaga el mod y lo vuelve a prender; lo confirma con las palabras del juego para activado y desactivado. No se guarda: siempre arranca prendido |
 | F8 | | Dice qué lector de pantalla usa el mod |
-| Ctrl + Escape | | Calla la voz |
 
 Las flechas, Enter y Backspace son del juego, no del mod.
 

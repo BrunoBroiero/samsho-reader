@@ -32,10 +32,8 @@ Author: **Bruno Broiero**. Built with Claude.
 | F2 / F3 | Right stick up / down | Previous / next piece of what is held |
 | F10 | Right stick click | Changes the command notation (Normal, Arcade, Arcade simplified, FGC, FGC simplified). The choice is saved |
 | F4 | Right stick click, when nothing is held | Reads the screen's button legend ("9 or A Confirm, 0 or B Back") |
-| F7 | | Stops the voice |
 | F6 | L3 + R3 (both sticks pressed together) | Turns the mod off and back on, confirmed with the game's words for on and off. Not saved: it always starts on |
 | F8 | | Names the screen reader the mod uses |
-| Ctrl + Escape | | Silences speech |
 
 The arrows, Enter and Backspace belong to the game, not the mod.
 
