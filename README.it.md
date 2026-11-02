@@ -1,28 +1,45 @@
 # SamSho Reader
 
-> Traduzione non revisionata da un madrelingua. Una parola sbagliata è un errore che vale la pena segnalare.
+[English](README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · **Italiano** ·
+[Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
-Mod di accessibilità per **SAMURAI SHODOWN** (2019, Steam): rende il gioco leggibile con il tuo screen reader. Menu, opzioni, selezione del personaggio e dello stage, sottotitoli della storia, tutorial, lista dei comandi, database, galleria, online, risultati e i numeri del combattimento.
+Un mod per screen reader per **SAMURAI SHODOWN** (2019; Steam, PC). Legge i menu, la storia, le liste di comandi, le tabelle e il testo a schermo con lo screen reader che già usi (NVDA, JAWS), nella lingua in cui gira il gioco.
 
-Quasi tutte le parole che sentirai sono quelle del gioco, nella lingua in cui è impostato. Le poche parole che il gioco non ha (direzioni dei comandi, nomi dei tasti, "vita", "furia") sono tradotte nelle undici lingue del gioco.
+Di Bruno Broiero, con l'aiuto di Claude.
 
-Autore: **Bruno Broiero**. Realizzato con Claude.
+## Cosa fa
 
-## Requisiti
+- Il menu principale e tutti i sottomenu, con la descrizione di ogni voce.
+- Opzioni: gioco, schermo, audio (volumi in %), lingua e sottotitoli, configurazione dei pulsanti (ogni azione con il suo tasto o pulsante).
+- Selezione del personaggio, compresi casuale, costumi e colori; selezione dello stage; assegnazione dei lati in Versus.
+- Storia: sottotitoli e dialoghi, sblocchi, epilogo e titoli di coda.
+- Tutorial: istruzione, compito e messaggio finale, con i tasti in parole.
+- Lista dei comandi: ogni mossa con il suo comando nella notazione scelta; scorsa con lo stick o F2 / F3.
+- Pausa e impostazioni dell'Allenamento.
+- Database: profilo, classifiche personali, registri generali.
+- Galleria: filmati, illustrazioni, voci e musica, con le loro schede e pagine.
+- Online: classifiche, schermate di battaglia classificata e casual, liste dei fantasmi della Battaglia fantasma.
+- Risultati: la frase del vincitore viene letta da sola; il punteggio resta trattenuto e si chiede con lo stick o F1.
+- Avvisi di sblocco e notifiche.
 
-- SAMURAI SHODOWN per Steam (Windows).
-- Uno screen reader in esecuzione: NVDA o JAWS. Il mod parla tramite PRISM.
-- [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS), il caricatore di mod per i giochi Unreal. È incluso nel download, nella versione che funziona con questo gioco (sperimentale, 21 settembre 2026): non c'è nulla da scaricare a parte.
-- Un gamepad XInput (tipo Xbox) è facoltativo, ma il mod è pensato per quello.
+Non viene letto:
+
+- La schermata di congratulazioni alla fine della storia è un'immagine senza testo.
+- Le stanze e la chat online non sono state provate con avversari.
 
 ## Installazione
 
-1. Scarica l'ultimo `SamShoReader-x.y.z.zip` dalla pagina Releases.
-2. Estrai tutto il contenuto in `SamuraiShodown\Binaries\Win64\` (la cartella del gioco; su Steam: `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`): `dwmapi.dll`, la cartella `ue4ss` e i README.
-3. Avvia il gioco **da Steam** (non dal .exe: senza Steam parte in inglese e offline).
-4. Al caricamento il mod dice "SamSho Reader". Se non lo senti, premi F8: dice il nome dello screen reader trovato.
+Servono la versione Steam per PC di SAMURAI SHODOWN, Windows x64 e uno screen reader in esecuzione (NVDA o JAWS). UE4SS, il caricatore di mod per i giochi Unreal, è incluso nello zip, nella versione che funziona con questo gioco.
 
-## Tasti del mod
+Estrai tutto il contenuto dello zip in `SamuraiShodown\Binaries\Win64` (su Steam: `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`): `dwmapi.dll`, la cartella `ue4ss` e questi README.
+
+Avvia il gioco da Steam, non dal .exe: senza Steam parte in inglese e offline. Il mod dice "SamSho Reader" appena è in funzione; se non lo senti, F8 dice il nome dello screen reader trovato. Nessun file del gioco viene modificato.
+
+Per disinstallare, elimina `dwmapi.dll` e la cartella `ue4ss`. UE4SS e PRISM, la libreria che parla con lo screen reader, hanno le proprie licenze: vedi `THIRD-PARTY.md`.
+
+## Tasti
+
+Fuori da un incontro:
 
 | Tasto | Gamepad | Cosa fa |
 |---|---|---|
@@ -30,12 +47,8 @@ Autore: **Bruno Broiero**. Realizzato con Claude.
 | F2 / F3 | Stick destro su / giù | Elemento precedente / successivo di ciò che è trattenuto |
 | F10 | Clic dello stick destro | Cambia la notazione dei comandi (Normale, Arcade, Arcade semplificata, FGC, FGC semplificata). La scelta viene salvata |
 | F4 | Clic dello stick destro, quando non c'è nulla trattenuto | Legge la legenda dei pulsanti della schermata ("9 o A Conferma, 0 o B Indietro") |
-| F6 | L3 + R3 (le due levette premute insieme) | Spegne il mod e lo riaccende; lo conferma con le parole del gioco per attivato e disattivato. Non viene salvato: parte sempre acceso |
-| F8 | | Dice quale screen reader usa il mod |
 
-Le frecce, Invio e Backspace sono del gioco, non del mod.
-
-## Durante il combattimento
+In un incontro:
 
 Nulla parla da solo: il combattimento si sente già. Con lo stick destro chiedi il dato che ti serve:
 
@@ -50,6 +63,26 @@ Nulla parla da solo: il combattimento si sente già. Con lo stick destro chiedi 
 Tastiera: F2 vita, F3 furia, F10 round, F1 tutto.
 
 In Sopravvivenza, Prova a tempo e Ironman viene detto solo il tuo lato.
+
+Sempre:
+
+| Tasto | Gamepad | Cosa fa |
+|---|---|---|
+| F6 | L3 + R3 (le due levette premute insieme) | Spegne il mod e lo riaccende; lo conferma con le parole del gioco per attivato e disattivato. Non viene salvato: parte sempre acceso |
+| F8 | | Dice quale screen reader usa il mod |
+
+## Cosa leggono F1, F2, F3 e lo stick destro
+
+Molte schermate mostrano più di ciò che sta sotto il cursore: una lista di comandi, i punteggi di un risultato, una tabella di record, una lezione. Il mod non legge tutto all'arrivo: lo conserva e lo consegna con questi tasti: F3 passa al pezzo successivo, F2 torna al precedente e F1 dice tutto in una volta. Alla fine F3 non dice nulla: così si sa che non c'è altro. Sul pad, la levetta destra fa lo stesso: giù è F3, su è F2, sinistra o destra è F1.
+
+Cosa sia un pezzo dipende dalla schermata:
+
+- **Lista di comandi**: ogni mossa con il suo comando, nella notazione scelta con F10 o il clic della levetta; cambiandola, la mossa viene ripetuta nella nuova. Entrando si dicono il personaggio e la categoria.
+- **Tutorial**: ogni frase della spiegazione e del compito, con gli input messi in parole; il clic ne cambia anche la notazione.
+- **Risultato**, a fine incontro: la frase del vincitore viene detta da sola; i punteggi aspettano nei tasti, apposta, perché la frase non resti sepolta sotto le cifre.
+- **Risultato del versus**: vittorie, sconfitte, pareggi, percentuale e punti di ciascun lato.
+- **Dati giocatore**: le tabelle di record e classifiche, una riga per pezzo; all'arrivo si dicono il titolo e la prima riga.
+- **Legenda dei pulsanti**: senza nulla di conservato, il clic della levetta (o F4) legge la legenda dei pulsanti della schermata stessa.
 
 ## La lista dei comandi e le sue notazioni
 
@@ -79,33 +112,14 @@ Come è stata pensata la lettura, perché un disegno dice con la forma cose che 
 
 La lista si scorre con lo stick destro (su e giù, mossa per mossa; sinistra o destra, tutta) o con F2, F3 e F1. Entrando dice il lottatore e la categoria ("SHIKI, MOSSE SPECIALI"), poi ogni mossa come "nome, condizione se c'è: comando", per esempio "Elysium Halo: avanti, giù, diagonale giù avanti più Taglio leggero o Taglio medio o Taglio forte".
 
-## Cosa viene letto
+## Segnalare un problema
 
-- Il menu principale e tutti i sottomenu, con la descrizione di ogni voce.
-- Opzioni: gioco, schermo, audio (volumi in %), lingua e sottotitoli, configurazione dei pulsanti (ogni azione con il suo tasto o pulsante).
-- Selezione del personaggio, compresi casuale, costumi e colori; selezione dello stage; assegnazione dei lati in Versus.
-- Storia: sottotitoli e dialoghi, sblocchi, epilogo e titoli di coda.
-- Tutorial: istruzione, compito e messaggio finale, con i tasti in parole.
-- Lista dei comandi: ogni mossa con il suo comando nella notazione scelta; scorsa con lo stick o F2 / F3.
-- Pausa e impostazioni dell'Allenamento.
-- Database: profilo, classifiche personali, registri generali.
-- Galleria: filmati, illustrazioni, voci e musica, con le loro schede e pagine.
-- Online: classifiche, schermate di battaglia classificata e casual, liste dei fantasmi della Battaglia fantasma.
-- Risultati: la frase del vincitore viene letta da sola; il punteggio resta trattenuto e si chiede con lo stick o F1.
-- Avvisi di sblocco e notifiche.
+Chiudi il gioco normalmente e invia `SamuraiShodown\Binaries\Win64\ue4ss\UE4SS.log`: registra ciò che il gioco ha mostrato e ciò che il mod ne ha detto, parola per parola, quindi non serve annotare ciò che hai sentito. Indica la schermata e cosa ti aspettavi di sentire.
 
-## Cosa non viene letto
+## Compilazione
 
-- La schermata di congratulazioni alla fine della storia è un'immagine senza testo.
-- Le stanze e la chat online non sono state provate con avversari.
+Il mod è in Lua, caricato da UE4SS; non si compila nulla tranne `prism_bridge.dll`, il piccolo modulo nativo che passa la voce a PRISM e legge il pad (`native\prism_bridge\build.ps1`, richiede MSVC). `python tools\package.py` costruisce lo zip della release dalla cartella del gioco.
 
-## Lingue
+## Traduzioni
 
-Il mod parla nella lingua del gioco. Le parole proprie del mod sono state verificate a orecchio solo in spagnolo; nelle altre lingue sono tradotte senza la revisione di un parlante. Una parola sbagliata è un errore che vale la pena segnalare.
-
-## Note
-
-- Il mod non modifica alcun file del gioco.
-- UE4SS è del team RE-UE4SS, con licenza MIT; `prism.dll` e `tolk.dll` provengono da [PRISM](https://github.com/ethindp/prism), con licenza MPL 2.0. Vedi `THIRD-PARTY.md`.
-- Per disinstallare, elimina `dwmapi.dll` e la cartella `ue4ss`.
-- Il codice sorgente del mod non è ancora pubblico; lo sarà quando il mod si sarà assestato con l'uso. Il download è libero da usare.
+Questo README esce in tutte le lingue supportate dal gioco. Solo le versioni inglese e spagnola sono state riviste da un parlante; le correzioni alle altre sono benvenute. Il mod stesso parla la lingua del gioco: quasi tutto ciò che dice è testo del gioco, e le sue poche parole proprie (direzioni, nomi dei tasti, "vita", "rabbia") sono state verificate a orecchio solo in spagnolo.

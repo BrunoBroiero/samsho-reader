@@ -1,30 +1,45 @@
 # SamSho Reader
 
-**English** · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Français](README.fr.md) ·
-[Italiano](README.it.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [한국어](README.ko.md) ·
-[简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
+**English** · [Español](README.es.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Italiano](README.it.md) ·
+[Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
-An accessibility mod for **SAMURAI SHODOWN** (2019, Steam): it makes the game readable with your screen reader. Menus, options, character and stage select, story subtitles, the tutorial, the command list, the database, the gallery, online, results and the fight's own numbers.
+A screen-reader mod for **SAMURAI SHODOWN** (2019; Steam, PC). It speaks the game's menus, story, command lists, tables and on-screen text through the screen reader you already use (NVDA, JAWS), in the language the game is running in.
 
-Almost every word you will hear is the game's own, in the language the game is set to. The few words the game has none for (command directions, key names, "life", "rage") are translated into the game's eleven languages.
+By Bruno Broiero, with help from Claude.
 
-Author: **Bruno Broiero**. Built with Claude.
+## What it does
 
-## Requirements
+- The main menu and every submenu, with each entry's description.
+- Options: game, display, sound (volumes in %), language and subtitles, button config (each action with its key or button).
+- Character select, including random, costumes and colours; stage select; side assignment in Versus.
+- Story: subtitles and dialogue, unlocks, epilogue and credits.
+- Tutorial: instruction, task and closing message, with the keys as words.
+- Command list: every move with its command in the notation you choose; walked with the stick or F2 / F3.
+- Pause and Training settings.
+- Database: profile, own rankings, general records.
+- Gallery: movies, artwork, voices and music, with their tabs and pages.
+- Online: leaderboards, ranked and casual battle screens, ghost lists in Ghost Battle.
+- Results: the winner's line is read by itself; the score is held and asked for with the stick or F1.
+- Unlock banners and notices.
 
-- SAMURAI SHODOWN for Steam (Windows).
-- A running screen reader: NVDA or JAWS. The mod speaks through PRISM.
-- [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS), the mod loader for Unreal games. It comes inside the download, in the build that works with this game (experimental, 21 September 2026): there is nothing to fetch separately.
-- An XInput (Xbox-style) gamepad is optional, but the mod is designed around one.
+Not read:
 
-## Installation
+- The congratulations screen at the end of the story is a picture with no text.
+- Online rooms and chat were not tested with opponents.
 
-1. Download the latest `SamShoReader-x.y.z.zip` from [Releases](../../releases).
-2. Extract everything in it into `SamuraiShodown\Binaries\Win64\` (the game folder; in Steam: `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`): `dwmapi.dll`, the `ue4ss` folder and the READMEs.
-3. Launch the game **from Steam** (not from the .exe: without Steam it starts in English and offline).
-4. When it loads, the mod says "SamSho Reader". If you do not hear it, press F8: it names the screen reader it found.
+## Installing
 
-## The mod's keys
+You need the Steam PC version of SAMURAI SHODOWN, Windows x64 and a running screen reader (NVDA or JAWS). UE4SS, the mod loader for Unreal games, comes inside the zip, in the build that works with this game.
+
+Extract everything in the zip into `SamuraiShodown\Binaries\Win64` (in Steam: `steamapps\common\SamuraiShodown\SamuraiShodown\Binaries\Win64`): `dwmapi.dll`, the `ue4ss` folder and these READMEs.
+
+Start the game from Steam, not from the .exe: without Steam it starts in English and offline. The mod says "SamSho Reader" as soon as it is running; if you do not hear it, F8 names the screen reader it found. No game file is modified.
+
+To uninstall, delete `dwmapi.dll` and the `ue4ss` folder. UE4SS and PRISM, the library that speaks to the screen reader, ship under their own licences: see `THIRD-PARTY.md`.
+
+## Keys
+
+Outside a fight:
 
 | Key | Gamepad | What it does |
 |---|---|---|
@@ -32,12 +47,8 @@ Author: **Bruno Broiero**. Built with Claude.
 | F2 / F3 | Right stick up / down | Previous / next piece of what is held |
 | F10 | Right stick click | Changes the command notation (Normal, Arcade, Arcade simplified, FGC, FGC simplified). The choice is saved |
 | F4 | Right stick click, when nothing is held | Reads the screen's button legend ("9 or A Confirm, 0 or B Back") |
-| F6 | L3 + R3 (both sticks pressed together) | Turns the mod off and back on, confirmed with the game's words for on and off. Not saved: it always starts on |
-| F8 | | Names the screen reader the mod uses |
 
-The arrows, Enter and Backspace belong to the game, not the mod.
-
-## In the fight
+In a fight:
 
 Nothing speaks by itself: the fight can already be heard. The right stick asks for the figure you need:
 
@@ -52,6 +63,26 @@ Nothing speaks by itself: the fight can already be heard. The right stick asks f
 Keyboard: F2 life, F3 rage, F10 rounds, F1 all.
 
 In Survival, Time Trial and Ironman only your own side is given.
+
+Always:
+
+| Key | Gamepad | What it does |
+|---|---|---|
+| F6 | L3 + R3 (both sticks pressed together) | Turns the mod off and back on, confirmed with the game's words for on and off. Not saved: it always starts on |
+| F8 | | Names the screen reader the mod uses |
+
+## What F1, F2, F3 and the right stick read
+
+Many screens show more than what is under the cursor: a command list, a result's scores, a table of records, a lesson. The mod does not read all of that on arrival: it keeps it and hands it over with these keys: F3 moves to the next piece, F2 back to the previous one, and F1 says it all at once. At the end, F3 says nothing: that is how you know there is no more. On a pad, the right stick does the same: down is F3, up is F2, left or right is F1.
+
+What a piece is depends on the screen:
+
+- **Command list**: each move with its input, in the notation chosen with F10 or the stick click; changing it repeats the move in the new one. On entering, the fighter and the category are said.
+- **Tutorial**: each sentence of the explanation and of the task, with the inputs put into words; the click changes their notation too.
+- **Result**, after a fight: the winner's line is said on its own; the scores wait in the keys, on purpose, so that the line is not buried under figures.
+- **Versus result**: wins, losses, draws, rate and points of each side.
+- **Player data**: the tables of records and rankings, one row per piece; on arrival the title and the first row are said.
+- **Button legend**: with nothing kept, the stick click (or F4) reads the screen's own legend of buttons.
 
 ## The command list and its notations
 
@@ -81,33 +112,14 @@ How the reading was designed, because a picture says things with its shape that 
 
 The list is walked with the right stick (up and down, move by move; left or right, whole) or with F2, F3 and F1. On entering it says the fighter and the category ("SHIKI, SPECIAL MOVES"), then each move as "name, condition if any: command", for example "Elysium Halo: forward, down, diagonal down forward plus Light Slash or Medium Slash or Heavy Slash".
 
-## What is read
+## Reporting a problem
 
-- The main menu and every submenu, with each entry's description.
-- Options: game, display, sound (volumes in %), language and subtitles, button config (each action with its key or button).
-- Character select, including random, costumes and colours; stage select; side assignment in Versus.
-- Story: subtitles and dialogue, unlocks, epilogue and credits.
-- Tutorial: instruction, task and closing message, with the keys as words.
-- Command list: every move with its command in the notation you choose; walked with the stick or F2 / F3.
-- Pause and Training settings.
-- Database: profile, own rankings, general records.
-- Gallery: movies, artwork, voices and music, with their tabs and pages.
-- Online: leaderboards, ranked and casual battle screens, ghost lists in Ghost Battle.
-- Results: the winner's line is read by itself; the score is held and asked for with the stick or F1.
-- Unlock banners and notices.
+Quit the game normally and send `SamuraiShodown\Binaries\Win64\ue4ss\UE4SS.log`: it records what the game displayed and what the mod said about it, in the exact words, so there is no need to write down what you heard. Say which screen it was and what you expected to hear.
 
-## What is not read
+## Building
 
-- The congratulations screen at the end of the story is a picture with no text.
-- Online rooms and chat were not tested with opponents.
+The mod is Lua, loaded by UE4SS; nothing is compiled except `prism_bridge.dll`, the small native module that hands speech to PRISM and reads the pad (`native\prism_bridge\build.ps1`, needs MSVC). `python tools\package.py` builds the release zip from the game folder.
 
-## Languages
+## Translations
 
-The mod speaks the game's language. The mod's own words were checked by ear in Spanish only; in the other languages they are translated without a speaker having reviewed them. A wrong word is a bug worth reporting.
-
-## Notes
-
-- The mod changes no game file.
-- UE4SS is by the RE-UE4SS team, under the MIT licence; `prism.dll` and `tolk.dll` come from [PRISM](https://github.com/ethindp/prism), under the MPL 2.0. See `THIRD-PARTY.md`.
-- To uninstall, delete `dwmapi.dll` and the `ue4ss` folder.
-- The mod's source is not public yet; it will be once the mod has settled into use. The download is free to use.
+This README ships in every language the game supports. Only the English and Spanish ones have been checked by a speaker; corrections to the rest are welcome. The mod itself speaks the game's language: almost everything it says is the game's own text, and its few words of its own (directions, key names, "life", "rage") were checked by ear in Spanish only.
